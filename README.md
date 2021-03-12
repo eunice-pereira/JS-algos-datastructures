@@ -26,6 +26,47 @@ Big O cares about the dominant term of a function, or the term that grows the fa
 
 ## Analyzing Performance of Arrays and Objects
 
+### Objects
+
+- Objects work well when order is not important or needed, and we need fast access, insertion, removal
+
+Insertion: O(1) - constant time
+Removal: O(1)- constant time
+Searching: O(N) - linear time
+Access: O(1) - constant time
+
+#### Big O of Object Methods
+
+Object.keys - O(N)
+Object.values- O(N)
+Object.entries- O(N)
+hasOwnProperty- O(1)
+
+### Arrays
+
+- Arrays are ordered, unlike Objects, and used when order is needed
+- Accessing data in an array is quick, however can time can come at a cost when searching, removing, and inserting
+
+#### Big O of Arrays
+
+**Insertion & Removal** depends on where we are making a change in the array
+
+- Each element has index, so we can add by pushing to end of array, O(1)
+- Problematic when inserting at beginning of array, because now every element in array must be reindexed, so now time changed to O(N)
+- same concept applies whne removing
+- `push` and `pop` are always _faster_ than `shift` and `unshift`
+
+Searching - O(N), as fast as searching can get
+Access - O(1), also fast, straight forward since elements can be accessed directly
+
+To summarize...
+
+`push` and `pop`: O(1)
+`shift`, `unshift`: O(N)
+`concat`, `slice`, and `splice`: O(N)
+`sort`: O(N \* log N)
+`forEach`, `map`, `filter`, and `reduce`: O(N)
+
 ## Problem Solving Approach
 
 ## Problem Solving Patterns
