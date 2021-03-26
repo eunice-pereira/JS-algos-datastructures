@@ -69,6 +69,41 @@ To summarize...
 
 ## Problem Solving Approach
 
+- a process or set of steps to accomplish a certan task
+- algos are the foundation for being a successful problem solver and developer 👩🏻‍💻
+
+### Devise a plan for solving problems
+
+**1. Understand the problem**
+
+- Can I restate the problem in my own words?
+- What are the inputs that go into the problem?
+- What are the outputs that should come from the solution?
+- Can the outputs be determined from the inputs? (i.e. do I have enough information to solve the problem?)
+- How should I label the important pieces of data that are a part of the problem?
+
+**2. Explore concrete examples**
+
+- this helps understand the problem better
+- provides sanity checks that your eventual solution works how it should
+- start with simple, then progress to more complex, then explore with empty inputs, finally with invalid inputs.
+
+**3. Break it down**
+
+- use comments to break down general steps, then make comments more specific
+- this helps you think about steps you need to code, and also helps identify any concepts that you may need clarification on
+
+**4. Solve/simplify**
+
+- by this step, some algos can be solved. However, sometimes the proboem needs simplification first.
+- if initial problem cannot be solved, then solve a simpler problem
+- this also helps to show progress, versus getting stuck and not coding anything at all
+- simplifying also helps gain insight to more difficult problem
+
+**5. Look back and refactor**
+
+### Master common problem solving patters
+
 ## Problem Solving Patterns
 
 ## Recursion
