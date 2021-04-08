@@ -102,7 +102,20 @@ To summarize...
 
 **5. Look back and refactor**
 
-### Master common problem solving patters
+- Can you check result?
+- Can you derive the result differently?
+- Can you understand it at a glance?
+- Can you use the result or method for some other problem?
+- Can you improve the performance of your solution?
+- Can you think of other ways to refactor?
+- How have other people solved this problem?
+
+### Master common problem solving patterns
+
+1. Frequency Counters.
+
+- This pattern uses objects or sets to collect values/frequencies of values
+- This can often avoid the need for nested loops or O(N^2) operations with arrays/strings. This patter is usually O(N).
 
 ## Problem Solving Patterns
 
