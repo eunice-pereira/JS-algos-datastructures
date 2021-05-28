@@ -131,6 +131,8 @@ To summarize...
 
 4. Divide and Conquer Pattern
 
-## Problem Solving Patterns
+- This pattern involves dividing a data set into smaller chunks and then repeating a process with a subset of data
+- tremendously decreases time complexity
+- Method normally used for large set of data
 
 ## Recursion
