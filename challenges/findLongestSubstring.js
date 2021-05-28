@@ -23,3 +23,4 @@ function findLongestSubstring(str) {
 	}
 	return longest;
 }
+console.log(findLongestSubstring('thecatinthehat'));

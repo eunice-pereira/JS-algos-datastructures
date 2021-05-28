@@ -136,3 +136,14 @@ To summarize...
 - Method normally used for large set of data
 
 ## Recursion
+
+- a process (function) that calls itself
+- important in complex data structures
+- sometimes a cleaner alternative to iteration
+
+### Call Stack
+
+- In almost all program languages, there is a built in data structure that manages what happens when functions are invoked
+- data structure (**stack**). any time a function is invoked it is placed (**pushed**) on top of the call stack
+- when JS sees the return keyword or when function ends, the compiler will remove (**pop**)
+- When we write recursive functions, we keep pushing new functions onto the call stack.
