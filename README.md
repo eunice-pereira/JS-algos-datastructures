@@ -147,3 +147,12 @@ To summarize...
 - data structure (**stack**). any time a function is invoked it is placed (**pushed**) on top of the call stack
 - when JS sees the return keyword or when function ends, the compiler will remove (**pop**)
 - When we write recursive functions, we keep pushing new functions onto the call stack.
+
+### Helper Method Recursion
+
+- outer function used with 'helper' function defined and called inside
+- outer function is not recursive, but calles inner function which is recursive
+
+### Pure Recursion
+
+- No nested functions, more challenging but shorter
