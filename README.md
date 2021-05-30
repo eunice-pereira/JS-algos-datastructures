@@ -153,6 +153,8 @@ To summarize...
 - outer function used with 'helper' function defined and called inside
 - outer function is not recursive, but calles inner function which is recursive
 
-### Pure Recursion
+### Recursion Tips
 
-- No nested functions, more challenging but shorter
+- For arrays, use methods like **slice**, **spread operator**, and **concat** that makes copies of arrays so they are not mutated
+- Strings are immutable so will need to use methods like, **slice**, **substr**, or **substring** to make copies of strings.
+- To make copies of objects, use **Object.assign**, or the **spread** operator.
