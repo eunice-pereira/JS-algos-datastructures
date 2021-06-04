@@ -162,3 +162,15 @@ To summarize...
 ---
 
 ## Searching
+
+### Linear Search
+
+- Moves at a set interval and checks one index at a time from beginning.
+- Time complexity O(N).
+- Can be used on **unsorted array**
+
+### Binary Search
+
+- much faster, eliminates half of remaining elements at time.
+- can only be used on **sorted arrays**
+- Time complexity O(log n)
