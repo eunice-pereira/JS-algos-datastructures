@@ -161,22 +161,34 @@ To summarize...
 
 ---
 
-## Searching
-
-### Linear Search
+## Linear Search
 
 - Moves at a set interval and checks one index at a time from beginning.
 - Time complexity O(N).
 - Can be used on **unsorted array**
 
-### Binary Search
+## Binary Search
 
 - much faster, eliminates half of remaining elements at time.
 - can only be used on **sorted arrays**
 - Time complexity O(log n)
+
+---
 
 ## Bubble Sort
 
 - A sorting algorithm where the largest values bubble to to the top.
 - Adjacent values are compared and swapped if larger, pushing the largest value to the top.
 - Bubble sort is least optimal in comparison to other sorting algorithms.
+
+## Selection Sort
+
+- Similar to bubble sort, but instead of first placing large values into sorted position, it places small values in sorted position
+- finds smallest value, then swaps to beginning of array
+- reusable swap function for selection sort:
+
+```js
+const swap = (arr, idx1, idx2) => {
+	[arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
+};
+```
