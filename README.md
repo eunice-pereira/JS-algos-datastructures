@@ -180,11 +180,13 @@ To summarize...
 - A sorting algorithm where the largest values bubble to to the top.
 - Adjacent values are compared and swapped if larger, pushing the largest value to the top.
 - Bubble sort is least optimal in comparison to other sorting algorithms.
+- **Pro**: Works well with nearly sorted data
 
 ## Selection Sort
 
 - Similar to bubble sort, but instead of first placing large values into sorted position, it places small values in sorted position
 - finds smallest value, then swaps to beginning of array
+- **Con**: Does not work well with nearly sorted data; it will still iterate through all items
 - reusable swap function for selection sort:
 
 ```js
@@ -192,3 +194,21 @@ const swap = (arr, idx1, idx2) => {
 	[arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
 };
 ```
+
+## Insertion Sort
+
+- Builds up sort by gradually creatig a larger left portion which is always sorted
+- instead of finding lowest/largest value, it takes each element and places it where it should go in the sorted portion
+- **Pro**: Works well with nearly sorted data
+
+## Comparing Bubble, Selection, and Insertion
+
+Often called **quadratic algorithms**
+
+| Algorithm      | Time Complexity (Best) | Time Complexity (Average) | Time Complexity (Worst) | Space Complexity |
+| -------------- | ---------------------- | ------------------------- | ----------------------- | ---------------- |
+| Bubble Sort    | O(N)                   | O(N^2)                    | O(N^2)                  | O(1)             |
+| Insertion Sort | O(N)                   | O(N^2)                    | O(N^2)                  | O(1)             |
+| Selection Sort | O(N^2)                 | O(N^2)                    | O(N^2)                  | O(1)             |
+
+---
