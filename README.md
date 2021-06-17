@@ -212,3 +212,7 @@ Often called **quadratic algorithms**
 | Selection Sort | O(N^2)                 | O(N^2)                    | O(N^2)                  | O(1)             |
 
 ---
+
+## Merge Sort
+
+- The following 3 sorting algorithms (merge, quick, and radix) are significantly faster than the previous 3 (bubble, selection, insertion)
