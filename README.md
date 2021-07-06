@@ -230,6 +230,8 @@ The following 3 sorting algorithms (merge, quick, and radix) are significantly f
   - if the value in the first array is **larger** than the value in the second array, push the value in the second array into our results and move onto the next value in the second array
   - once we exhaust one array, push in all remaining values from the other array.
 
+**Big O** of Merge Sort is O(n log n).
+
 ## Quick Sort
 
 ## Radix Sort
