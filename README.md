@@ -191,7 +191,7 @@ To summarize...
 
 ```js
 const swap = (arr, idx1, idx2) => {
-	[arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
+  [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
 };
 ```
 
@@ -213,6 +213,23 @@ Often called **quadratic algorithms**
 
 ---
 
+The following 3 sorting algorithms (merge, quick, and radix) are significantly faster than the previous 3 (bubble, selection, insertion).
+
+- The more efficient algorithms are less simple, but improve complexity from `O(n^2)` to `O(n log n)`.
+
 ## Merge Sort
 
-- The following 3 sorting algorithms (merge, quick, and radix) are significantly faster than the previous 3 (bubble, selection, insertion)
+- works by decomposing an array into smaller arrays of 0 or 1 elements, then building up a newly sorted array.
+- In order to implement merge sort, it's useful to first implement a function responsible for merging two sorted arrays.
+
+**Psuedo Code**
+
+- Create an empty array, take a look at the smallest values in each input array
+- While there are still values we haven't looked at..
+  - if the value in the fist array is **smaller** than the value in the second array, push the value in the first array into our results and move on to the next value in the first array
+  - if the value in the first array is **larger** than the value in the second array, push the value in the second array into our results and move onto the next value in the second array
+  - once we exhaust one array, push in all remaining values from the other array.
+
+## Quick Sort
+
+## Radix Sort
