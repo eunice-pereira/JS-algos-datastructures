@@ -33,3 +33,29 @@ integer: how many players are able to level up (i.e. players that meet rank or h
 
 */
 
+function numPlayers(scores) {
+  // sort scores descending order
+  let sortedScores = scores.sort((a, b) => b - a);
+  let rank = 1;
+  console.log(sortedScores);
+
+  // assign rank to scores
+  for (let i = 0; i <= sortedScores.length; i++) {
+    //check if duplicate score exists
+    if (sortedScores[i]) {
+      rank++;
+    }
+    console.log(rank);
+  }
+
+  // equal scores have equal ranks
+
+  // next lower score ranks based on position of list (1 based index)
+
+  // ranks that are <= k
+  return rank;
+  // return count of n players that ranked <= k
+  // return Object.keys(rank) <= k
+}
+
+console.log(numPlayers([50, 50, 25, 100]));

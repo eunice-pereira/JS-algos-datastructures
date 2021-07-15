@@ -32,6 +32,7 @@ function pthFactor(n, p) {
   // check if k is in first half of factors
   // if true, we have solution
   let arrSize = factors.length;
+
   if (p <= arrSize) {
     return factors[p - 1];
   }
@@ -39,6 +40,7 @@ function pthFactor(n, p) {
   // check if k is in the second half of all factors
   // total number of factors is twice in size
   let factorsCount = 2 * arrSize;
+ 
 
   // check if n is perfect square - reduce factor count by 1 to prevent repetition
   if (factors[arrSize - 1] * factors[arrSize - 1] == n) {
@@ -50,6 +52,10 @@ function pthFactor(n, p) {
     return 0;
   }
   // divide n by corresponding factor at index to give actual factor
+  console.log(factorsCount);
+  console.log(factors[factorsCount-p])
   return n / factors[factorsCount - p];
 }
-console.log(pthFactor(1000, 10));
+console.log(pthFactor(20, 4));
+
+
