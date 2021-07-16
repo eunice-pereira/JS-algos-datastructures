@@ -56,6 +56,6 @@ function pthFactor(n, p) {
   console.log(factors[factorsCount-p])
   return n / factors[factorsCount - p];
 }
-console.log(pthFactor(20, 4));
+console.log(pthFactor(20, 5));
 
 
