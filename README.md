@@ -233,6 +233,7 @@ The following 3 sorting algorithms (merge, quick, and radix) are significantly f
 **Big O** of Merge Sort is O(n log n).
 
 ## Quick Sort
+
 - Works by selecting one element (called the "pivot") and finding the index where the pivot should end up in the sorted array 
 - Once the pivot is positioned appropriately, quick sort can be applied on either side of the pivot. 
 
@@ -240,3 +241,10 @@ The following 3 sorting algorithms (merge, quick, and radix) are significantly f
 Best case is O(n log n). 
 
 ## Radix Sort
+
+- Special sorting algo that does not make comparisons and works in binary numbers. 
+- Exploits fact that info about size of number is encoded in number of digits. More digits means bigger number. 
+- First looks at digit on right most digit and groups into buckets based on that number. 
+- Forms back into list, and repeats process, looking at next digit to the left, until array is sorted. 
+
+**Big O** of Radix Sort is O(nk) best, average, and worst. Space Complexity is O(n + k). 
