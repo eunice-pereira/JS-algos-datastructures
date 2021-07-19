@@ -233,5 +233,10 @@ The following 3 sorting algorithms (merge, quick, and radix) are significantly f
 **Big O** of Merge Sort is O(n log n).
 
 ## Quick Sort
+- Works by selecting one element (called the "pivot") and finding the index where the pivot should end up in the sorted array 
+- Once the pivot is positioned appropriately, quick sort can be applied on either side of the pivot. 
+
+**Big O** of Quick Sort is O(n^2) worst case when pivot is at first (minimum) item or last.  It is best for pivot to be chosen at random. 
+Best case is O(n log n). 
 
 ## Radix Sort

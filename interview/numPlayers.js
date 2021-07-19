@@ -33,31 +33,49 @@ integer: how many players are able to level up (i.e. players that meet rank or h
 
 */
 
-
 function numPlayers(scores, k) {
-  let rank = {};
-  let sortedScores = scores.sort((a, b) => b - a);
-  let uniqueScores = 
+  let i;
+  if (scores && k > 0) {
+    let sorted = scores.filter((score) => score >= 1).sort((a, b) => b - a);
+    console.log(sorted);
 
-  console.log(sortedScores)
-  for (let i = 1; i <= sortedScores.length; i++) {
-    // if score has not been set as key
-    // set value to rank array at i
-    if (!rank[sortedScores[i]]) {
-      rank[sortedScores[i - 1]] = i;
+    let ranks = sorted.map((value) => sorted.indexOf(value) + 1);
+    console.log(ranks);
 
-      // check if score is already a key
-      // push i to existing score
-    } else if (rank[sortedScores[i - 1]]) {
-      rank[sortedScores[i - 1]].push(i - 1);
-    }
-  }
-  console.log(rank);
-  // return ranks as array
-  let ranks = Object.values(rank).join().split(',');
-  let levelUp = ranks.filter((value) => {
-    return value <= k;
-  });
-  return levelUp.length;
+    let binarySearch = function (arr, val) {
+      let start = 0;
+      let end = arr.length - 1;
+
+      while (start <= end) {
+        let mid = Math.floor((start + end) / 2);
+        if (arr[mid] <= val) return true; 
+        else if (arr[mid] < val) start = mid + 1;
+        else end = mid - 1;
+      }
+      return false;
+    };
+
+    if (binarySearch(ranks, k) && k <= ranks.length) {
+      console.log(ranks);
+      let levelUp = ranks.filter((rank) => rank <= k);
+      console.log(levelUp);
+      return levelUp.length;
+  
+    } else return 0;
+  } else return 0;
 }
-console.log(numPlayers([100, 50, 50, 25], 3));
+
+console.log(
+  numPlayers([100, 50, 50, 25, 30, 5, 10, 99, 44, 33, 22, 11, 10, 0], 4)
+);
+
+/*
+Edge cases: 
+- k > 0 and k <= ranks.length (k must be valid and existing)
+- score >= 1 and <= 100
+*/
+
+// ^^ binary search - hackerrank passes all tests except 7
+// quicksort w/o binary search passes all except 6 and 7 (time out)
+
+// rank - filter, map, then filter -- for loop instead? 
