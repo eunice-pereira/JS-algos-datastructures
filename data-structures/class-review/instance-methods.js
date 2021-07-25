@@ -4,7 +4,6 @@ Class Review
 - method to create new objects must be called constructor. this gets run when the class is instantiated 
 - class keyword creates an constant structure, so you can not redefine it.
 - create objects, or instances, using new keyword 
-
 */
 
 // define class properties

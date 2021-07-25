@@ -97,7 +97,7 @@ To summarize...
 
 **4. Solve/simplify**
 
-- by this step, some algos can be solved. However, sometimes the proboem needs simplification first.
+- by this step, some algos can be solved. However, sometimes the problem needs simplification first.
 - if initial problem cannot be solved, then solve a simpler problem
 - this also helps to show progress, versus getting stuck and not coding anything at all
 - simplifying also helps gain insight to more difficult problem

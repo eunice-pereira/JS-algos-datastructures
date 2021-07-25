@@ -14,11 +14,51 @@ Data structures are collections of values, the relationshiops among them, and th
 
 ---
 
-## ES2015 - Class Syntax
+## ES2015 - Classes Syntax
 
 - Using classes will make it easier to write data structures.
-
-## Classes
-
 - A blueprint for creating objects with pre-defined properties and methods.
 - Defines a pattern and then we can instantiate many objects using the blueprint (class)
+
+---
+
+## Singly Linked Lists
+
+- Stores any kind of data, ordered.
+- Consists of a **head, tail, and length** property.
+- Each element, or **node**, has a **value** and a **pointer** to another node or null.
+- Index are not used to access data. Must move through each node to access data.
+
+### Linked List vs. Arrays
+
+**Lists**
+
+- Do not have indexes
+- connected via nodes with a **next** pointer.
+- random access is not allowed.
+
+**Arrays**
+
+- Indexed in order
+- Indsertion and deletion can be expensive
+- can quickly be accessed at a specific index.
+
+## Doubly Linked Lists
+
+## Stacks
+
+## Queues
+
+## Binary Search Trees
+
+## Tree Reversal
+
+## Binary Heaps
+
+## Hash Tables
+
+## Graphs
+
+## Graph Traversal
+
+## Dynamic Programming
